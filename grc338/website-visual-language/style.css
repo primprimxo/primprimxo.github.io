@@ -183,9 +183,9 @@ footer p {
 	margin: 0;
 }
 
-main article {
-  padding-left: 8em;
-  padding-right: 8em;
+main > img + article {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media screen and (min-width: 60em) {
@@ -209,4 +209,15 @@ main article {
     margin: 1.5em 0 0 0;
   }
 
+  main > img + article {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  main > img + article {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
 }

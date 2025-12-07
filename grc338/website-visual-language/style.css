@@ -35,6 +35,7 @@ div.container {
 	position: relative;
 	min-height: 100vh;
 	background: #FFA5D8;
+	margin: 0 3em 0
 }
 
 main {
@@ -44,9 +45,9 @@ main {
 img {
   display: block;
   width: 100%;
-  max-width: 50rem;   
+  max-width: 90em;   
   min-width: 20rem;   
-  margin: 1rem 0 0.5rem;   
+  margin: 1rem auto 2rem;   
   box-sizing: border-box;
 }
 
@@ -64,13 +65,6 @@ h1 img {
   max-width: 7em;
   min-width: 0;
   margin: 1.5em auto 0 3em
-}
-
-main img {
-  width: auto;       
-  max-width: 90em;    
-  margin: 1rem auto 2rem;
-  display: block;
 }
 
 main.menu img {
@@ -120,13 +114,14 @@ h2 {
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	margin: 1rem 0 0.5rem;
 	font-family: "limon-bold-marker-outline", sans-serif;
 }
 
 h4 {
 	font-family: "limon-bold-marker", sans-serif;
+	color:#ff6abe
 }
 
 p {
@@ -134,14 +129,16 @@ p {
 }
 
 main.menu ul {
-	margin: 0;
-	padding: 0;
+  margin: 2em 0;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 main.menu ul li {
-	display: grid;
-	grid-template-columns: 1fr auto;
-	margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.2rem;              
+  align-items: start;
 }
 
 p.description {
@@ -153,7 +150,7 @@ p.price {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	margin: 0.2rem 0;
-	color: #D92399
+	color: #D92399;
 }
 
 p.slogan {
@@ -184,10 +181,6 @@ footer {
 
 footer p {
 	margin: 0;
-}
-
-main.contact {
-	padding: 1em 1em 1em 3em
 }
 
 main article {

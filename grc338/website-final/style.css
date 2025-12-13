@@ -1,0 +1,228 @@
+/* CSS DOCUMENT */
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+body {
+	font-family: "cafe-romantique", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background: #FBD9E5;
+	color: rgb(255, 255, 255);
+	line-height: 1.4;
+}
+
+div.home-container {
+    background-image: url("home-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+	margin: 0 3em 0
+}
+
+div.container {
+	position: relative;
+	min-height: 100vh;
+	background: #F283AF;
+	margin: 0 3em 0
+}
+
+main {
+	padding: 2rem 1rem 4rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 90em;   
+  min-width: 0em;   
+  margin: 1rem auto 2rem;   
+  box-sizing: border-box;
+}
+
+
+header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	background: rgb(201, 214, 220);
+	padding: 0rem 1rem 1rem 0rem;
+}
+
+h1 img {
+  width: auto;
+  max-width: 7em;
+  min-width: 0;
+  margin: 1.5em auto 0 3em
+}
+
+main.menu img {
+	background-color: rgb(255 255 255);   
+  	padding: 1rem;              
+	box-sizing: border-box;
+}
+
+nav ul {
+	text-align: right;
+}
+
+nav ul li.selected a {
+  background-color: #F283AF;
+  color: #FBF4EB;
+}
+
+nav ul li {
+	list-style-type: none;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav ul li a {
+	color: #F283AF; 
+	background-color: #FBF4EB;
+	text-decoration: none;
+	padding: 0.8rem;
+	font-size: 2em;
+	display: inline-block;
+}
+
+main ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+}
+
+h2, h3, h4 {
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 1rem 0 0.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin: 1rem 0 0.5rem;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-weight: 600;
+	color:#C43670; 
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+main.menu ul {
+  margin: 2em 0;
+  padding: 0em 2em 0em;
+}
+
+main.menu ul li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.2rem;              
+  align-items: start;
+}
+
+p.description {
+	grid-column: 1 / 3;
+	margin: 0.2rem 0;
+}
+
+p.price {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	margin: 0.2rem 0;
+	color: #C43670;
+}
+
+p.slogan {
+	font-family: "limon-script", sans-serif;
+	font-size: 3.5em;
+	font-style: italic;
+	text-align: left;
+	margin: 0.5em 1em 2em 0.25em;
+	color: rgb(255 255 255);
+}
+
+address {
+	color: rgb(0 0 0);
+	margin: 0.3rem;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #f3979c;
+	color: rgb(0 0 0);
+	padding: 0.75em 1em 0em;
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 0.9rem;
+}
+
+footer p {
+	margin: 0;
+}
+
+main > img + article {
+  padding: 0em 1em 0em;
+}
+
+body.about article {
+  max-width: 36em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 60em) {
+  main.menu ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 6em;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav ul {
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0 0.75rem;
+    justify-content: end;
+    margin: 1.5em 0 0 0;
+  }
+
+  main > img + article {
+    padding: 0em 8em 0em;
+  }
+
+@media screen and (max-width: 40em) {
+  img {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+  
+}

@@ -226,21 +226,6 @@ footer {
     padding: 2rem;
   }
 
-/* Prevent horizontal scrolling */
-html,
-body {
-  overflow-x: hidden;
-}
-
-/* Better sizing */
-* {
-  box-sizing: border-box;
-}
-
-/* More reliable viewport height on iPhone */
-.page {
-  min-height: 100dvh;
-
 /* MOBILE - iPhone Friendly */
 
 @media screen and (max-width: 768px) {

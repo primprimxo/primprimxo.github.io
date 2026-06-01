@@ -127,7 +127,7 @@ nav ul li a:hover {
 
 .photo-grid img {
   width: 100%;
-  height: 600px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
 
   border-radius: 1.5rem;
@@ -241,4 +241,126 @@ footer {
     padding: 2rem;
   }
 
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Better sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* More reliable viewport height on iPhone */
+.page {
+  min-height: 100dvh;
+
+/* MOBILE - iPhone Friendly */
+
+@media screen and (max-width: 768px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Navigation */
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav ul li a {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* Sections */
+  .page {
+    min-height: auto;
+    padding: 4rem 1rem;
+  }
+
+  /* Headings */
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  /* Cover Images */
+  .cover-page img,
+  .back-cover img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  /* Gallery */
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .photo-grid img {
+    height: auto;
+    max-height: 400px;
+  }
+
+  .gallery-text {
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Love Letter */
+  .love-letter {
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .love-letter p {
+    font-size: 1rem;
+  }
+
+  .signature {
+    font-size: 1.5rem;
+  }
+
+  /* Countdown */
+  .countdown-box {
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  #timer {
+    font-size: 1.8rem;
+    word-break: break-word;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
 }
